@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#05060d">
+<title>Galactic Upg Tree : Remade</title>
+<meta name="description" content="Galactic Upg Tree : Remade, a 3D incremental upgrade tree. Buy glowing nodes, then collapse your progress into stars, nebulae and galaxies.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="cv" aria-label="3D upgrade tree"></canvas>
+<div id="hud">
+  <div id="top">
+    <div class="big"><b id="dust">10</b> <small>Cosmic Dust</small></div>
+    <div class="sub"><span id="rate">0</span> per second</div>
+    <div id="chips"></div>
+  </div>
+  <div id="btns">
+    <button id="buyall">Buy all</button>
+    <button id="layersBtn">Layers</button>
+    <button id="menuBtn">Menu</button>
+  </div>
+  <aside id="layers" hidden></aside>
+  <aside id="menu" hidden>
+    <b>Galactic Upg Tree : Remade</b>
+    <button id="music">Music: off</button>
+    <button id="eco">Eco mode: off</button>
+    <button id="cam">Reset camera</button>
+    <button id="save">Save</button>
+    <button id="export">Export save</button>
+    <button id="import">Import save</button>
+    <button id="reset">Hard reset</button>
+    <p class="dim small">Autosaves every 10 seconds. Offline progress up to 12 hours.<br>Goal: reach 1e150 Cosmic Dust.</p>
+  </aside>
+  <div id="info" hidden>
+    <b id="nm"></b><p id="fxd"></p><p id="cost"></p><p id="state" class="dim small"></p>
+    <button id="buy">Buy</button>
+  </div>
+  <div id="hint">Drag to rotate. Pinch or scroll to zoom. Tap a node to select it, tap again to buy.</div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
