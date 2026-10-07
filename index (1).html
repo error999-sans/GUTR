@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Command_Execute</title>
+<style>
+:root{--fg:#7CFC9A}
+html,body{height:100%;margin:0;background:#06080c;color:var(--fg);font:14px/1.45 ui-monospace,Menlo,Consolas,monospace}
+#term{height:100%;overflow:auto;padding:10px;cursor:text}
+#out div{white-space:pre-wrap;word-break:break-word}
+.err{color:#ff7b7b}.dim{opacity:.6}
+#line{display:flex;gap:8px}
+#in{flex:1;background:none;border:0;color:inherit;font:inherit;outline:none;caret-color:var(--fg)}
+</style>
+</head>
+<body>
+<div id="term"><div id="out"></div><div id="line"><span id="pr"></span><input id="in" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Command"></div></div>
+<script src="../../os/fs.js"></script>
+<script src="terminal.js"></script>
+</body>
+</html>
